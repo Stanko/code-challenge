@@ -25,7 +25,7 @@ data.submissions.forEach((submission) => {
 const html = [];
 
 Object.keys(weeks)
-  .sort((a, b) => a.localeCompare(b))
+  .sort((a, b) => b.localeCompare(a))
   .forEach((week, weekIndex) => {
     const items = [];
 
@@ -73,5 +73,4 @@ const index = htmlTemplate.replace(
   html.join('\n')
 );
 
-console.log(index);
 fs.writeFileSync('./docs/index.html', index, { encoding: 'utf-8' });
