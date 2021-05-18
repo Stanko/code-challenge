@@ -1,0 +1,228 @@
+submissions:
+  - author: Stanko
+    week: 1. Scroll animation
+    link: https://muffinman.io/weekly-code-challenge/week-one/
+    link-to-source-code: https://github.com/Stanko/weekly-code-challenge/tree/master/src/week-one
+    notes:
+
+  - author: Miloš
+    week: 1. Scroll animation
+    link: https://codepen.io/mpavlicevic/full/yLgXWRK
+    link-to-source-code:
+    notes:
+
+  - author: Vojin
+    week: 1. Scroll animation
+    link: https://codepen.io/voja1/full/NWdvMBQ
+    link-to-source-code:
+    notes:
+
+  - author: Jelena
+    week: 1. Scroll animation
+    link: https://codepen.io/todorovicjelena/full/JjEyWYE
+    link-to-source-code:
+    notes:
+
+  - author: Nikola B.
+    week: 1. Scroll animation
+    link: https://very-berry.netlify.app/scroll-animation
+    link-to-source-code: https://github.com/nborisic/weekly-code
+    notes:
+
+  - author: Radoš
+    week: 1. Scroll animation
+    link: https://codepen.io/radospavlicevic/full/WNRZxoZ
+    link-to-source-code:
+    notes:
+
+  - author: Marina
+    week: 1. Scroll animation
+    link: https://codepen.io/meda_medvedic/full/PoWOmZX
+    link-to-source-code:
+    notes:
+
+  - author: Vojin
+    week: 2. Gestures
+    link: https://codepen.io/voja1/full/mdRqmaY
+    link-to-source-code:
+    notes:
+
+  - author: Stanko
+    week: 2. Gestures
+    link: https://muffinman.io/weekly-code-challenge/week-two/
+    link-to-source-code: https://github.com/Stanko/weekly-code-challenge/tree/master/src/week-two
+    notes:
+
+  - author: Jelena
+    week: 2. Gestures
+    link: https://codepen.io/todorovicjelena/full/XWpqBzj
+    link-to-source-code:
+    notes: Pinch with your left hand to put the fire out.
+
+  - author: Miloš
+    week: 2. Gestures
+    link: https://codepen.io/mpavlicevic/full/LYxmYQQ
+    link-to-source-code:
+    notes:
+
+  - author: Radoš
+    week: 2. Gestures
+    link: https://codepen.io/radospavlicevic/full/QWdaONE
+    link-to-source-code:
+    notes:
+
+  - author: Toma
+    week: 2. Gestures
+    link: https://codepen.io/tomapaunovic/full/BapVoqb
+    link-to-source-code:
+    notes:
+
+  - author: Nikola B.
+    week: 2. Gestures
+    link: https://very-berry.netlify.app/gesture
+    link-to-source-code: https://github.com/nborisic/weekly-code/tree/main/src/week-two
+    notes:
+
+  - author: Stanko
+    week: 3. Letters
+    link: https://muffinman.io/weekly-code-challenge/week-three/
+    link-to-source-code: https://github.com/Stanko/weekly-code-challenge/tree/master/src/week-three
+    notes:
+
+  - author: David
+    week: 3. Letters
+    link: https://codepen.io/davidlazic/full/wvgXgoE
+    link-to-source-code:
+    notes:
+
+  - author: Miloš
+    week: 3. Letters
+    link: https://codepen.io/mpavlicevic/full/eYgLoNY
+    link-to-source-code:
+    notes:
+
+  - author: Toma
+    week: 3. Letters
+    link: https://codepen.io/tomapaunovic/full/eYgPEqB
+    link-to-source-code:
+    notes:
+
+  - author: Jelena
+    week: 3. Letters
+    link: https://openprocessing.org/sketch/1171701
+    link-to-source-code:
+    notes: Click to run transformation.
+
+  - author: Nikola B.
+    week: 3. Letters
+    link: https://very-berry.netlify.app/letters
+    link-to-source-code: https://github.com/nborisic/weekly-code/tree/main/src/week-three
+    notes:
+
+  - author: Stanko
+    week: 4. Numbers
+    link: https://muffinman.io/weekly-code-challenge/week-four/
+    link-to-source-code: https://github.com/Stanko/weekly-code-challenge/tree/master/src/week-four
+    notes:
+
+  - author: David
+    week: 4. Numbers
+    link: http://davidlazic.github.io/Coins/
+    link-to-source-code:
+    notes: "David's old project on the subject.\n"
+
+  - author: Radoš
+    week: 4. Numbers
+    link: https://codepen.io/radospavlicevic/full/GRrPOdJ
+    link-to-source-code:
+    notes:
+
+  - author: Jelena
+    week: 4. Numbers
+    link: https://openprocessing.org/sketch/1178320
+    link-to-source-code:
+    notes:
+
+  - author: Vojin
+    week: 4. Numbers
+    link: https://codepen.io/voja1/full/oNBOOOr
+    link-to-source-code:
+    notes:
+
+  - author: Miloš
+    week: 4. Numbers
+    link: https://codepen.io/mpavlicevic/full/abpxRjz
+    link-to-source-code:
+    notes:
+
+  - author: David
+    week: 5. Exit
+    link: https://codepen.io/davidlazic/full/jOyoJXg
+    link-to-source-code:
+    notes:
+
+  - author: Stanko
+    week: 5. Exit
+    link: https://muffinman.io/weekly-code-challenge/week-five/
+    link-to-source-code: https://github.com/Stanko/weekly-code-challenge/tree/master/src/week-five
+    notes:
+
+  - author: Miloš
+    week: 5. Exit
+    link: https://codepen.io/mpavlicevic/full/yLMLNYe
+    link-to-source-code:
+    notes:
+
+  - author: Nikola B.
+    week: 5. Exit
+    link: https://very-berry.netlify.app/exit
+    link-to-source-code: https://github.com/nborisic/weekly-code/tree/main/src/week-five
+    notes:
+
+  - author: Nemanja
+    week: 6. Space
+    link: https://codepen.io/nemanjawork/full/vYxNbEX
+    link-to-source-code:
+    notes:
+
+  - author: Stanko
+    week: 6. Space
+    link: https://muffinman.io/weekly-code-challenge/week-six/
+    link-to-source-code: https://github.com/Stanko/weekly-code-challenge/tree/master/src/week-six
+    notes:
+
+  - author: David
+    week: 6. Space
+    link: https://codepen.io/davidlazic/full/poejpda
+    link-to-source-code:
+    notes:
+
+  - author: Jelena
+    week: 6. Space
+    link: https://openprocessing.org/sketch/1193481
+    link-to-source-code:
+    notes: "Press space to jump and to restart the game.\n"
+
+  - author: Nikola B.
+    week: 6. Space
+    link: https://very-berry.netlify.app/space
+    link-to-source-code:
+    notes:
+
+  - author: Stanko
+    week: 7. Waves
+    link: https://muffinman.io/weekly-code-challenge/week-seven/
+    link-to-source-code: https://github.com/Stanko/weekly-code-challenge/tree/master/src/week-seven
+    notes:
+
+  - author: Vojin
+    week: 7. Waves
+    link: https://codepen.io/voja1/full/QWpKZZg
+    link-to-source-code:
+    notes:
+
+  - author: David
+    week: 7. Waves
+    link: https://codepen.io/davidlazic/full/OJpRLWM
+    link-to-source-code:
+    notes:
