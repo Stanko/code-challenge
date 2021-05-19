@@ -10,6 +10,7 @@ submissions:
     link: https://codepen.io/mpavlicevic/full/yLgXWRK
     link-to-source-code:
     notes:
+    star: true
 
   - author: Vojin
     week: 1. Scroll animation
@@ -58,6 +59,7 @@ submissions:
     link: https://codepen.io/todorovicjelena/full/XWpqBzj
     link-to-source-code:
     notes: Pinch with your left hand to put the fire out.
+    star: true
 
   - author: Miloš
     week: 2. Gestures
@@ -112,6 +114,7 @@ submissions:
     link: https://openprocessing.org/sketch/1171701
     link-to-source-code:
     notes: Click to run transformation.
+    winner: true
 
   - author: Nikola B.
     week: 3. Letters
@@ -154,6 +157,7 @@ submissions:
     link: https://codepen.io/mpavlicevic/full/abpxRjz
     link-to-source-code:
     notes:
+    winner: true
 
   - author: David
     week: 5. Exit
@@ -178,12 +182,14 @@ submissions:
     link: https://very-berry.netlify.app/exit
     link-to-source-code: https://github.com/nborisic/weekly-code/tree/main/src/week-five
     notes:
+    winner: true
 
   - author: Nemanja
     week: 6. Space
     link: https://codepen.io/nemanjawork/full/vYxNbEX
     link-to-source-code:
     notes:
+    winner: true
 
   - author: Stanko
     week: 6. Space
@@ -226,7 +232,7 @@ submissions:
     link: https://codepen.io/davidlazic/full/OJpRLWM
     link-to-source-code:
     notes:
-    
+
   - author: Jelena
     week: 7. Waves
     link: https://openprocessing.org/sketch/1198555

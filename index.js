@@ -48,9 +48,18 @@ Object.keys(weeks)
         const notes = submission.notes
           ? `<p class="notes">${submission.notes}</p>`
           : '';
+
+        const winner = submission.winner
+          ? ` <span class="winner" title="Winning submission!" aria-label="Winning submission!">🍫</pan>`
+          : '';
+
+        const star = submission.star
+          ? ` <span class="star" title="Submission with the most reactions on Slack!" aria-label="Submission with the most reactions on Slack!">⭐</pan>`
+          : '';
+
         items.push(`
           <li class="submission">
-            <h3 class="author">${submission.author}</h3>
+            <h3 class="author">${submission.author}${winner}${star}</h3>
             <div class="links">
               <a href="${submission.link}">Demo</a>
               ${sourceCodeLink}
