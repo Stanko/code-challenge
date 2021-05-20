@@ -82,4 +82,12 @@ const index = htmlTemplate.replace(
   html.join('\n')
 );
 
-fs.writeFileSync('./docs/index.html', index, { encoding: 'utf-8' });
+const BUILD_DIR = './build';
+
+if (!fs.existsSync(BUILD_DIR)) {
+  fs.mkdirSync(BUILD_DIR);
+  fs.writeFileSync(`${BUILD_DIR}/index.html`, index, { encoding: 'utf-8' });
+  fs.copyFileSync('index.css', `${BUILD_DIR}/index.css`);
+} else {
+  console.log(`ERROR: Couldn't create ${BUILD_DIR} dir.`);
+}
