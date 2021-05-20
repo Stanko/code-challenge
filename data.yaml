@@ -226,6 +226,7 @@ submissions:
     link: https://codepen.io/voja1/full/QWpKZZg
     link-to-source-code:
     notes:
+    winner: true
 
   - author: David
     week: 7. Waves
@@ -236,5 +237,11 @@ submissions:
   - author: Jelena
     week: 7. Waves
     link: https://openprocessing.org/sketch/1198555
+    link-to-source-code:
+    notes:
+
+  - author: Miloš
+    week: 7. Waves
+    link: https://codepen.io/mpavlicevic/full/PopbKwQ
     link-to-source-code:
     notes:
