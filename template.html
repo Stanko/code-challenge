@@ -31,5 +31,31 @@
         <!-- CONTENT GOES HERE -->
       </div>
     </div>
+    <script>
+      document.querySelectorAll('button').forEach((button) => {
+        button.addEventListener('click', function () {
+          const id = button.getAttribute('aria-controls');
+          const submissionsElement = document.getElementById(id);
+
+          if (submissionsElement) {
+            submissionsElement.classList.add('submissions--fade');
+            if (submissionsElement.style.display === 'none') {
+              submissionsElement.style.display = '';
+              button.setAttribute('aria-expanded', 'true');
+            } else {
+              submissionsElement.style.display = 'none';
+              button.setAttribute('aria-expanded', 'false');
+            }
+          }
+        });
+      });
+    </script>
+    <noscript>
+      <style>
+        .submissions {
+          display: block !important;
+        }
+      </style>
+    </noscript>
   </body>
 </html>

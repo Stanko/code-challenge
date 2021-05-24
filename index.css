@@ -37,7 +37,7 @@ a:hover {
 }
 
 .wrapper {
-  max-width: 800px;
+  max-width: 500px;
   margin: 0 auto;
 }
 
@@ -47,21 +47,68 @@ h1 {
   line-height: 1.2em;
 }
 
+.current-week-label {
+  color: #333;
+  font-size: 13px;
+}
+
 .week {
   margin-bottom: 40px;
 }
 
-.week-title {
+.week-title button {
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  border-bottom: 1px solid #ddd;
   font-size: 1.5em;
   font-size: bold;
-  margin-bottom: 20px;
+  padding: 5px 0;
+  text-align: left;
+  width: 100%;
+  outline-offset: 10px;
+  transition: border 250ms, color 250ms;
+}
+
+.week-title button:focus,
+.week-title button:hover {
+  color: #2f5cbd;
+  cursor: pointer;
+  border-bottom-color: #4f7cdd;
+}
+
+.week-title svg {
+  transition: transform 250ms;
+}
+
+.week-title button[aria-expanded='true'] svg {
+  transform: rotate(180deg);
+}
+
+@keyframes fade-in {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.submissions {
+  margin-top: 20px;
+}
+
+.submissions--fade {
+  animation: fade-in 250ms 1;
+  animation-fill-mode: forwards;
 }
 
 .submission {
   margin-left: 30px;
-}
-
-.submission {
   margin-bottom: 20px;
 }
 

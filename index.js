@@ -22,11 +22,11 @@ data.submissions.forEach((submission) => {
   weeks[submission.week].push(submission);
 });
 
-const html = [];
+const html = ['<div class="current-week-label">Current week:</div>'];
 
 Object.keys(weeks)
   .sort((a, b) => b.localeCompare(a))
-  .forEach((week, weekIndex) => {
+  .forEach((week, i) => {
     const items = [];
 
     weeks[week]
@@ -68,10 +68,26 @@ Object.keys(weeks)
           </li>`);
       });
 
+    const weekIndex = parseInt(week, 10);
+    const isExpanded = i === 0;
+
     html.push(`
-      <div class="week">
-        <h2 class="week-title" id="week-${weekIndex + 1}">${week}</h2>
-        <ul class="submissions">
+      <div class="week" id="week-${weekIndex}">
+        <h2 class="week-title">
+          <button 
+            type="button"
+            aria-expanded="${isExpanded.toString()}"
+            aria-controls="submissions-${weekIndex}" 
+          >
+            ${week}
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+            </svg>
+          </button>
+        </h2>
+        <ul class="submissions" id="submissions-${weekIndex}" style="${
+      isExpanded ? '' : 'display: none'
+    }">
           ${items.join('\n')}
         </ul>
       </div>`);
@@ -86,8 +102,7 @@ const BUILD_DIR = './build';
 
 if (!fs.existsSync(BUILD_DIR)) {
   fs.mkdirSync(BUILD_DIR);
-  fs.writeFileSync(`${BUILD_DIR}/index.html`, index, { encoding: 'utf-8' });
-  fs.copyFileSync('index.css', `${BUILD_DIR}/index.css`);
-} else {
-  console.log(`ERROR: Couldn't create ${BUILD_DIR} dir.`);
 }
+
+fs.writeFileSync(`${BUILD_DIR}/index.html`, index, { encoding: 'utf-8' });
+fs.copyFileSync('index.css', `${BUILD_DIR}/index.css`);
