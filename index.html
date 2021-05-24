@@ -552,10 +552,12 @@
       </div>
     </div>
     <script>
-      document.querySelectorAll('button').forEach((button) => {
+      var buttons = [].slice.call(document.querySelectorAll('button'));
+
+      buttons.forEach(function (button) {
         button.addEventListener('click', function () {
-          const id = button.getAttribute('aria-controls');
-          const submissionsElement = document.getElementById(id);
+          var id = button.getAttribute('aria-controls');
+          var submissionsElement = document.getElementById(id);
 
           if (submissionsElement) {
             submissionsElement.classList.add('submissions--fade');
