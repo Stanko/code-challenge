@@ -22,7 +22,7 @@ data.submissions.forEach((submission) => {
   weeks[submission.week].push(submission);
 });
 
-const html = ['<div class="current-week-label">Current week:</div>'];
+const html = [];
 
 Object.keys(weeks)
   .sort((a, b) => b.localeCompare(a))
@@ -70,6 +70,12 @@ Object.keys(weeks)
 
     const weekIndex = parseInt(week, 10);
     const isExpanded = i === 0;
+
+    if (i === 0) {
+      html.push('<div class="week-eyebrow">Current week:</div>');
+    } else if (i === 1) {
+      html.push('<div class="week-eyebrow">Previous weeks:</div>');
+    }
 
     html.push(`
       <div class="week" id="week-${weekIndex}">
