@@ -41,10 +41,38 @@ a:hover {
   margin: 0 auto;
 }
 
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 h1 {
   font-size: 2em;
+  font-weight: 800;
   margin-bottom: 40px;
   line-height: 1.2em;
+}
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  h1 {
+    animation: gradient-animation 30s linear infinite;
+    background-image: linear-gradient(
+      270deg,
+      #e74c3c,
+      #f1c40f,
+      #2ecc71,
+      #3498db
+    );
+    background-clip: text;
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 .week-eyebrow {
