@@ -72,9 +72,9 @@ Object.keys(weeks)
     const isExpanded = i === 0;
 
     if (i === 0) {
-      html.push('<div class="week-eyebrow">Current week:</div>');
+      html.push('<div class="eyebrow">Current week:</div>');
     } else if (i === 1) {
-      html.push('<div class="week-eyebrow">Previous weeks:</div>');
+      html.push('<div class="eyebrow">Previous weeks:</div>');
     }
 
     html.push(`
@@ -111,4 +111,14 @@ if (!fs.existsSync(BUILD_DIR)) {
 }
 
 fs.writeFileSync(`${BUILD_DIR}/index.html`, index, { encoding: 'utf-8' });
-fs.copyFileSync('index.css', `${BUILD_DIR}/index.css`);
+
+const FILES_TO_COPY = [
+  'index.css',
+  'icon.ico',
+  'icon-16.png',
+  'icon-32.png',
+  'icon-180.png',
+  'weekly-code-challenge.png',
+].forEach((fileName) => {
+  fs.copyFileSync(fileName, `${BUILD_DIR}/${fileName}`);
+});
