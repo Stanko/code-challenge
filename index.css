@@ -1,3 +1,5 @@
+/* --------- GLOBAL STYLES --------- */
+
 *,
 *::after,
 *::before {
@@ -14,6 +16,7 @@ body {
     sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
   padding: 40px 20px;
   line-height: 1.4em;
+  background: #f1f5f6;
 }
 
 h1,
@@ -36,10 +39,7 @@ a:hover {
   color: #062258;
 }
 
-.wrapper {
-  max-width: 500px;
-  margin: 0 auto;
-}
+/* --------- KEYFRAMES --------- */
 
 @keyframes gradient-animation {
   0% {
@@ -52,12 +52,44 @@ a:hover {
     background-position: 0% 50%;
   }
 }
+
+@keyframes fade-in {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.wrapper {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* --------- HEADER --------- */
+
+.eyebrow {
+  color: #333;
+  font-size: 13px;
+  letter-spacing: -0.2px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
 h1 {
+  order: 2;
   font-size: 2em;
   font-weight: 800;
   margin-bottom: 40px;
   line-height: 1.2em;
 }
+
 @supports (background-clip: text) or (-webkit-background-clip: text) {
   h1 {
     animation: gradient-animation 30s linear infinite;
@@ -75,10 +107,7 @@ h1 {
   }
 }
 
-.week-eyebrow {
-  color: #333;
-  font-size: 13px;
-}
+/* --------- WEEKS --------- */
 
 .week {
   margin-bottom: 40px;
@@ -90,7 +119,7 @@ h1 {
   align-items: center;
   justify-content: space-between;
   border: none;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #d1d7d8;
   font-size: 1.5em;
   font-size: bold;
   padding: 5px 0;
@@ -113,17 +142,6 @@ h1 {
 
 .week-title button[aria-expanded='true'] svg {
   transform: rotate(180deg);
-}
-
-@keyframes fade-in {
-  0% {
-    transform: translateY(-20px);
-    opacity: 0;
-  }
-  100% {
-    transform: none;
-    opacity: 1;
-  }
 }
 
 .submissions {
