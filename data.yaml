@@ -258,4 +258,9 @@ submissions:
     link-to-source-code:
     notes:
     
-
+  - author: Nikola B.
+    week: 8. Physics
+    link: https://very-berry.netlify.app/physics
+    link-to-source-code: https://github.com/nborisic/weekly-code/tree/main/src/week-eight
+    notes:
+    
