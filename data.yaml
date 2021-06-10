@@ -271,4 +271,16 @@ submissions:
     link-to-source-code:
     notes:
 
+  - author: Nikola B.
+    week: 9. Depth
+    link: https://very-berry.netlify.app/depth
+    link-to-source-code: https://github.com/nborisic/weekly-code/tree/main/src/week-nine
+    notes:
+
+  - author: Stanko
+    week: 9. Depth
+    link: https://muffinman.io/weekly-code-challenge/week-nine/
+    link-to-source-code: https://github.com/Stanko/weekly-code-challenge/tree/master/src/week-nine
+    notes:
+
     
