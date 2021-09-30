@@ -72,9 +72,7 @@ Object.keys(weeks)
     const isExpanded = i === 0;
 
     if (i === 0) {
-      html.push('<div class="eyebrow">Current week:</div>');
-    } else if (i === 1) {
-      html.push('<div class="eyebrow">Previous weeks:</div>');
+      html.push('<div class="eyebrow">Weeks:</div>');
     }
 
     html.push(`
