@@ -25,22 +25,13 @@ data.submissions.forEach((submission) => {
 const html = [];
 
 Object.keys(weeks)
-  .sort((a, b) => b.localeCompare(a))
+  .sort((a, b) => a.localeCompare(b))
   .forEach((week, i) => {
     const items = [];
 
     weeks[week]
       .sort((a, b) => a.author.localeCompare(b.author))
       .map((submission) => {
-        /*
-        {
-          author: 'Vojin',
-          week: '1. Scroll animation',
-          link: 'https://codepen.io/voja1/full/NWdvMBQ',
-          'link-to-source-code': null,
-          notes: null
-        }
-        */
         const sourceCodeLink = submission['link-to-source-code']
           ? `<span class="separator" aria-hidden>&bull;</span>
           <a href="${submission['link-to-source-code']}">Source code</a>`
@@ -83,7 +74,7 @@ Object.keys(weeks)
             aria-expanded="${isExpanded.toString()}"
             aria-controls="submissions-${weekIndex}" 
           >
-            ${week}
+            ${week.replace(/^0/, '')}
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
             </svg>
